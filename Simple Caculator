@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    float a,b;
+    char operator;
+    printf("selet operator\n");
+    scanf("%c", &operator);
+    printf("enter 1st number : \n");
+    scanf("%f",&a);
+    printf("enter 2nd number : \n");
+    scanf("%f",&b);
+
+    switch(operator){
+        case '+': printf("addition : %f\n", a+b);
+        break;
+        case '-': printf("substraction : %f \n", a-b);
+        break;
+        case '*': printf("multiplication : %f\n", a*b); 
+        break;
+        case '/': printf("division : %f\n", a/b); 
+        break;
+        }
+    return 0;
+}
